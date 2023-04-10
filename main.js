@@ -1,24 +1,19 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+//import './style.css'
+
+const numCaps = 28;
+
+function CreateCaps(numcaps) {
+  let element = '';
+  for (let index = 1; index <= numcaps; index++) {
+    element = element + `<div><p>${index}</div>`    
+  }
+  return element;  
+}
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+<h1>Desafio Leitura Biblica 2023</h1>
+<p>${numCaps} dias - Mateus (06/03 - 02/04/2023)</p>
+<div id='caps'>  
+   ${CreateCaps(numCaps)}      
+</div>`
 
-setupCounter(document.querySelector('#counter'))
