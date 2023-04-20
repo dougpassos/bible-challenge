@@ -1,42 +1,57 @@
+ * {
+  font-family: 'Bitter', serif;
+ }
+ 
  header {
-  border: 1px dashed;
-  border-radius: 4%;
-  background-color: rgb(182, 255, 255, 0.8);
- } 
+  text-align: center;
+  border: 1px solid;
+  border-radius: 2%;
+  background-color: rgb(18, 184, 184);
+ }
+
+ header h1 {
+  font-style: normal;
+  font-size: xx-large;
+ }
+
+ header p{
+  font-style: italic;
+  font-size: larger;
+ }
  
  body {  
-   background: #00416A;
-   background-image: url(/img/magnifying-glass.png);
-   background-size: 10%;
-   background-repeat: space;
+   background: #001a2a;
  }
 
  #caps {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  border: 1px dashed;
-  background-color: rgba(182, 255, 255, 0.8);
-  border-radius: 2%;
+  justify-content: space-evenly; 
 }
 
 #caps div{  
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 5px solid purple;  
-  border-radius: 100%;
-  width: 100px;
+  justify-content: center; 
+  border-radius: 5%;
+  width: 150px;
   height: 100px;
   text-align: center;
   font-size: xx-large;
   color:aliceblue;
-  background-color: rgba(0, 148, 148);
+  background-color: rgb(18, 184, 184);
   margin: 1%;  
+}
+
+#caps div:hover {
+  background-color: rgb(18, 90, 90);
 }
 
 footer{
   border: 1px dashed;
   border-radius: 5%;
-  background-color: rgba(127, 255, 212, 0.8);
+  background-color: rgb(18, 184, 184);
+  text-align: center;
+  font-size: larger;
+  font-style: italic;
 }
