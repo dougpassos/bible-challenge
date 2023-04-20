@@ -1,12 +1,13 @@
-//import './style.css'
-
-const numCaps = 28;
+const numCaps = 10;
+const startDate = "06 março";
+const finalDate = "02 abril";
+const currentYear = "2023";
 
 function Header() {
   return `
   <header>
-    <h1>Desafio Leitura Biblica 2023</h1>
-    <p>${numCaps} dias - Mateus (06/03 - 02/04/2023)</p>
+    <h1>Leitura Biblica ${currentYear}</h1>
+    <p>Livro: Mateus   
   </header>
   `
 }
@@ -14,7 +15,7 @@ function Header() {
 function Footer() {
   return `
     <footer>
-    <p>Footer</p>
+    <p> <p>${numCaps} dias - de ${startDate} até ${finalDate}</p></p>
     </footer>
   `
 }
